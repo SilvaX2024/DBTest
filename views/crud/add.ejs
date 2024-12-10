@@ -1,0 +1,101 @@
+<div
+  class="d-flex justify-content-between flex-wrap flex-md nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+>
+  <h1 class="h2">Files</h1>
+  <div class="btn-toolbar mb-2 mb-md 0">
+    <div class="btn-group me-2">
+      <a href="/home" class="btn btn-sm btn-secondary">Back</a>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="col py-3">
+  <div class="row">
+    <div class="col">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+          <li class="breadcrumb-item active">New File</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="col text-end fw-lighter">
+      <b>Folder</b>
+    </div>
+  </div>
+</div> -->
+
+<form action="/add" method="POST">
+  <div class="row form-group mb-4">
+    <div class="col">
+      <label for="filesName">Files Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="filesName"
+        name="filesName"
+        value=""
+        placeholder="Files Name"
+        required
+      />
+    </div>
+
+    <div class="col">
+      <label for="folderName">Folder Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="folderName"
+        name="folderName"
+        value=""
+        placeholder="Folder Name"
+        required
+      />
+    </div>
+  </div>
+
+  <div class="row form-group mb-4">
+    <div class="col">
+      <label for="website">Website</label>
+      <input
+        type="text"
+        class="form-control"
+        id="website"
+        name="website"
+        value=""
+        placeholder="Website"
+        required
+      />
+    </div>
+
+    <div class="col">
+      <label for="email">Email</label>
+      <input
+        type="text"
+        class="form-control"
+        id="email"
+        name="email"
+        value=""
+        placeholder="Email"
+        required
+      />
+    </div>
+  </div>
+
+  <div class="form-group mb-4">
+    <label for="details">File Details</label>
+    <input
+      type="text"
+      class="form-control"
+      name="details"
+      id="details"
+      cols="30"
+      rows="12"
+      placeholder="File Details"
+    />
+  </div>
+
+  <div class="form-group mb-4">
+    <button type="submit" class="btn btn-primary">Upload File</button>
+  </div>
+</form>

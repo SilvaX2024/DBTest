@@ -1,0 +1,73 @@
+<div class="d-flex justify-content-between flex-wrap flex-md nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2"><%= crud.filesName  %> <%= crud.folderName  %></h1>
+    <div class="btn-toolbar mb-2 mb-md 0">
+      <div class="btn-group me-2">
+        <a href="/home" class="btn btn-sm btn-secondary">Back</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col py-3">
+  
+    <div class="row">
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/home">Dashboard</a></li>
+            <li class="breadcrumb-item active"><%= crud.filesName  %></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="col text-end fw-lighter">
+        <b>Last Updated <%= new Date(crud.updatedAt).toUTCString() %> </b>
+        <b>Folder:</b> <%= crud._id %>
+      </div>
+    </div>
+  
+  </div>
+  
+  <ul class="list-group">
+  
+    <li class="list-group-item"> 
+      <div class="row">
+        <div class="col" style="max-width: 140px"> <b>Name:</b></div>
+        <div class="col"><%= crud.filesName %> <%= crud.folderName %></div>
+      </div>
+    </li>
+  
+    <li class="list-group-item"> 
+      <div class="row">
+        <div class="col" style="max-width: 140px"> <b>Website:</b></div>
+        <div class="col"><%= crud.website %></div>
+      </div>
+    </li>
+  
+    <li class="list-group-item"> 
+      <div class="row">
+        <div class="col" style="max-width: 140px"> <b>Email:</b></div>
+        <div class="col"><%= crud.email %></div>
+      </div>
+    </li>
+  
+    <li class="list-group-item"> 
+      <div class="row">
+        <div class="col" style="max-width: 140px"> <b>Details:</b></div>
+        <div class="col"><%= crud.details %></div>
+      </div>
+    </li>
+  
+    <li class="list-group-item"> 
+      <div class="row">
+        <div class="col" style="max-width: 140px"> <b>Date Created:</b></div>
+        <div class="col"><%= crud.createdAt %></div>
+      </div>
+    </li>
+  
+    <li class="list-group-item"> 
+      <div class="row">
+        <div class="col" style="max-width: 140px"> <b>Date Modified:</b></div>
+        <div class="col"><%= crud.updatedAt %></div>
+      </div>
+    </li>
+  
+  </ul>
